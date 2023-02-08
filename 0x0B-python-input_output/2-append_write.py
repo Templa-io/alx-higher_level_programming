@@ -1,21 +1,17 @@
 #!/usr/bin/python3
-"""read_lines
+"""This module contains a function that appends a string at the
+end of a text file.
 """
-import os
 
 
-def read_lines(filename="", nb_lines=0):
-    """Takes in str filename to read, and n lines w/ int nb_lines
+def append_write(filename="", text=""):
+    """Appends a string at the end of a text file and returns the
+    number of characters added.
+    Args:
+        filename: the file to append.
+        text: the text to append.
     """
 
-
-    with open(filename, encoding="utf-8") as readFile:
-        lineNum = 0
-        while True:
-            line = readFile.readline()
-            lineNum += 1
-            print(line, end='')
-            if lineNum >= nb_lines and nb_lines > 0:
-                break 
-            if not line:
-                break
+    with open('filename', 'a', encoding='utf-8') as f:
+        f.write(text)
+        return len(text)
