@@ -22,4 +22,4 @@ for arg in sys.argv:
         continue
     my_list.append(arg)
 
-save_to_json_file(my_list, filename
+save_to_json_file(my_list, filename)
