@@ -1,20 +1,14 @@
 #!/usr/bin/python3
-"""MyInt inherits from int
-"""
+"""Defines a class MyInt that inherits from int."""
 
 
 class MyInt(int):
-    """Inherits from int
-    """
+    """Invert int operators == and !=."""
 
     def __eq__(self, value):
-        """Magic method equals
-        """
-
-        return super().__ne__(value)
+        """Override == opeartor with != behavior."""
+        return self.real != value
 
     def __ne__(self, value):
-        """Magic method not equals
-        """
-
-        return super().__eq__(value
+        """Override != operator with == behavior."""
+        return self.real == value
