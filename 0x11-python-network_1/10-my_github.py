@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Uses the GitHub API to display a GitHub ID based on given credentials.
 
-Usage: ./10-my_github.py <GitHub username> <GitHub password>
+Usage: ./10-my_github.py <Templa-io> <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 >
   - Uses Basic Authentication to access the ID.
 """
 import sys
